@@ -38,3 +38,7 @@ const orderTeams = (...teams) => {
   });
   return standingsString;
 };
+
+const teamsObj = {name: 'Sounders', results: 'wlww'}
+
+console.log(orderTeams(teamsObj))
