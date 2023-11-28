@@ -2,9 +2,60 @@
 <html>
   <head>
     <title>Contact Me</title>
+    <link rel="stylesheet" href="contact-me.css" />
   </head>
 
   <body>
     <!-- TODO -->
-  </body>
+    <div class ="container">
+      <h1>Contact Us</h1>
+      <form id="form-contact" action="">
+        <div class="input-group">
+          <label for="fullname" class="label">Your Name</label>
+          <input type="text" id="fullname" name="fullname" class="form-control validate-input"/>
+        </div>
+        
+        <div class="input-group">
+          <label for="email" class="label">Your email address</label>
+          <input type="email" id="email" name="email" class="form-control validate-input"/>
+        </div>
+        
+        <div class="input-group">
+          <label for="message" class="label">Your message</label>
+          <textarea id="message" name="message" class="form-control" rows="6" maxlength="300"></textarea>
+        </div>
+        
+        <div class="input-group">
+          <label for="contact-reason">Contact reason</label>
+          <select id="contact-reason" name="contact-reason" class="form-control">
+            <option value="choose" selected="selected" disabled>Choose one</option>
+            <option value="JobOpp">Job Opportunity</option>
+            <option value="Talkop">Talk code</option>
+          </select>
+        </div>
+
+        <div class="input-group hidden">
+          <label for="jobtitle" class="label">Your job title</label>
+          <input type="text" id="jobtitle" name="jobtitle" class="form-control validate-input"/>
+        </div>
+
+        <div class="input-group hidden">
+          <label for="companywebsite" class="label">Your company website</label>
+          <input type="url" id="url" name="url" class="form-control validate-input"/>
+        </div>
+
+        <div class="input-group hidden">
+          <label for="codinglang" class="label">Coding language</label>
+          <input type="text" id="codinglang" name="codinglang" class="form-control validate-input"/>
+        </div>
+        
+        <div class="input-group">
+          <input type="submit" id="button" class="contact-btn" value="Submit"/>
+        </div>
+        </form>
+      </div>
+
+      <script src = "contact-me.js"></script>
+
+    </body>
 </html>
